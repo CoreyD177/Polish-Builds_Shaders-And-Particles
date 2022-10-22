@@ -7,6 +7,11 @@ public class Empty : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Component[] g = gameObject.GetComponents(typeof(Component));
+        foreach (Component c in g)
+        {
+            Debug.Log(c.GetType());
+        }
         
     }
 
@@ -14,5 +19,6 @@ public class Empty : MonoBehaviour
     void Update()
     {
         
+
     }
 }
